@@ -28,7 +28,17 @@ void movezero(vector <int>& arr)
 
 int main(void)
 {
-    vector <int> arr = {1,2,3,0,4,5,0,0};
+    int n, size;
+    vector <int> arr;
+    cout << "Masukkan ukuran vector: ";
+    cin >> size;
+
+    for (int i = 1; i <= size; i++)
+    {
+        cout << "Masukkan angka ke-" << i << ": ";
+        cin >> n;
+        arr.push_back(n);
+    }
 
     // menampilkan vector yg belum dipindah 0 nya
     cout << "Vector sebelum dipindah nolnya: \n";
