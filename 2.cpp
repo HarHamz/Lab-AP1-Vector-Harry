@@ -21,7 +21,17 @@ void frekuensi(vector <int> arr)
 
 int main(void)
 {
-    vector <int> arr = {1,2,2,3,3,3,5};
+    int n, size;
+    vector <int> arr;
+    cout << "Masukkan ukuran vector: ";
+    cin >> size;
+
+    for (int i = 1; i <= size; i++)
+    {
+        cout << "Masukkan angka ke-" << i << ": ";
+        cin >> n;
+        arr.push_back(n);
+    }
 
     cout << "Masukkan angka yang mau dicari frekuensinya: ";
     cin >> num;
